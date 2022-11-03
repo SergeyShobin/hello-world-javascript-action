@@ -40,3 +40,7 @@ function getWorkFlowRunId() {
   }
   return workFlowRunId
 }
+
+function getApiVersion(): string {
+  return '6.0-preview'
+}
