@@ -5,7 +5,7 @@ const artifact = require('@actions/artifact');
 try {
   // `who-to-greet` input defined in action metadata file
   const nameToGreet = core.getInput('who-to-greet');
-  console.log(`Hello ${nameToGreet}!`);
+//  console.log(`Hello ${nameToGreet}!`);
   const artifactUrl = `${getRuntimeUrl()}_apis/pipelines/workflows/${getWorkFlowRunId()}/artifacts?api-version=${getApiVersion()}`
   console.log(`Artifact Url: ${artifactUrl}`)
   const time = (new Date()).toTimeString();
