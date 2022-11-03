@@ -17,7 +17,7 @@ try {
   core.setFailed(error.message);
 }
 
-function getRuntimeToken(): string {
+function getRuntimeToken() {
   const token = process.env['ACTIONS_RUNTIME_TOKEN']
   if (!token) {
     throw new Error('Unable to get ACTIONS_RUNTIME_TOKEN env variable')
@@ -25,7 +25,7 @@ function getRuntimeToken(): string {
   return token
 }
 
-function getRuntimeUrl(): string {
+function getRuntimeUrl() {
   const runtimeUrl = process.env['ACTIONS_RUNTIME_URL']
   if (!runtimeUrl) {
     throw new Error('Unable to get ACTIONS_RUNTIME_URL env variable')
@@ -33,7 +33,7 @@ function getRuntimeUrl(): string {
   return runtimeUrl
 }
 
-function getWorkFlowRunId(): string {
+function getWorkFlowRunId() {
   const workFlowRunId = process.env['GITHUB_RUN_ID']
   if (!workFlowRunId) {
     throw new Error('Unable to get GITHUB_RUN_ID env variable')
