@@ -11,8 +11,8 @@ async function run(): Promise<void> {
   try {
     // `who-to-greet` input defined in action metadata file
     const nameToGreet = core.getInput('who-to-greet')
-    const inputs = uploadArtifact.getInputs()
-    const searchResult = await uploadArtifact.findFilesToUpload(inputs.searchPath)
+    // const inputs = uploadArtifact.getInputs()
+    const searchResult = await uploadArtifact.findFilesToUpload('build/app/outputs/apk/profile/')
     console.log(`Hello ${nameToGreet}!`);
     console.log(`searchResult ${searchResult}!`);
 //   const maxRetentionStr = parseInt(process.env['GITHUB_RETENTION_DAYS'])
