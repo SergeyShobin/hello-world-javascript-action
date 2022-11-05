@@ -1,10 +1,10 @@
-import {CreateArtifactParameters} from "@actions/artifact/lib/internal/contracts";
-import {getRuntimeUrl, getWorkFlowRunId} from "@actions/artifact/lib/internal/config-variables";
-import {getApiVersion} from "@actions/artifact/lib/internal/utils";
+// import {CreateArtifactParameters} from "@actions/artifact/lib/internal/contracts";
+// import {getRuntimeUrl, getWorkFlowRunId} from "@actions/artifact/lib/internal/config-variables";
+// import {getApiVersion} from "@actions/artifact/lib/internal/utils";
 
 import * as core from '@actions/core'
 import * as github from '@actions/github'
-import * as artifact from '@actions/artifact'
+// import * as artifact from '@actions/artifact'
 import * as uploadArtifact from '@actions/upload-artifact'
 
 async function run(): Promise<void> {
